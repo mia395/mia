@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+body, h1, h2, h3, p {
+   margin: 0;
+   padding: 0;
+}
+
+/* Global styles */
+body {
+   font-family: Times New Roman;
+}
+#outfit-header {
+    width:98%;
+    background-color:#630 ;
+    padding: 1%;
+    display: flex; /*use to create responsive box layout*/
+}
+
+.gambar-logo {
+    margin: 0 1%; /* Add spacing between image and text */
+    flex:0 0 auto; /* Prevent image from growing or shrinking */
+}
+
+#nav {
+   width:60%; /*minimize the width size of the navigation*/
+   margin:0 auto; /*centered width*/
+   text-align:center;
+   display:flex; /*used together with align-items t*/
+   align-items:center; /*put the text vertically align-must used together    with
+   display:flex;*/
+   padding:0 1%;
+}
+ 
+a {
+   flex:1; /* Allow text to grow and take available space */
+   text-decoration: none;
+   color: #FFF;
+   padding:1%;
+}
+
+.here
+{
+   flex:1;
+   color:#630;
+   font-weight:bold;
+   padding:1%;
+}
+
+a:hover { color:#630; }
+	
+#text-banner {
+width:100%;
+background-image:url(images/banner8.png);
+background-size:cover; /* will shrink the image when the web size is   smaller */
+text-align: center;
+color:#960;
+padding: 5% 0;
+font-size: 18px;
+}
+#outfit {
+width:100%;
+float:left;
+display: flex;
+justify-content: center;
+flex-wrap: wrap; /* will go to next line if exceed width */
+padding: 1% 0;
+}
+#outfit-card {
+background-color: #f8f8f8;
+border: 0px #ddd;
+margin: 1%;
+padding: 1%;
+text-align:center;
+}
+.gambar
+{
+width:100%;
+height:auto;
+}
+#outfit-footer {
+width:98%;
+float:left;
+text-align: center;
+padding: 3%;
+background-color: #630;
+color: #FFF;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 500px) {
+h1, h2, h3, p, a, .here {font-size: 2vw;}
+.gambar-logo { width:10%; height:auto; }
+}	
+
+#box2
+{
+width:100%;
+float:left;
+}
+
+.dot {
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+/* products webpage */
+#nav a {
+	color: #630
+	margin: 0 15px;
+	text-decoration: none;
+	font-size: 18px
+}
+#products {
+	display: flex;
+	justify-content: left;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+#products-card {
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin: 10px;
+	width: 250px;
+	text-align: center;
+	
+}
+.product-image {
+	width: 100%;
+	height: auto;
+		
+}
+button {
+	background: #F60;
+	color: #960
+	border: 2px;
+	padding: 10px;
+	cursor: pointer;
+}
+button:hover {
+	background: #630;
+}
+
+/* categories webpage */
+#categories {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+#category-card {
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin: 10px;
+	width: 250px;
+	text-align: center;
+}
+.category-image {
+	width: 100%;
+	height: auto;
+}
+.view-btn {
+	display: block;
+	background: #960;
+	color: white;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+}
+.view-btn:hover {
+	background: #0056b3;
+}
+/*set the size of division fruits-map to 100%*/
+#outfit-map
+{
+     width:100%;
+     float:left;
+     margin-left:2%;
+     padding: 1% 0;
+}
+/*set the size of division map1 and map2 to 28% and float it to left*/
+#map1, #map2,
+{
+     background-color:#CFF;
+  border: 1px solid #ddd;
+  margin: 1%;
+   width:28%;
+   padding:1%;
+   float:left;
+   text-color: #630
+}
+/*set the text to center*/
+.text-map {
+       text-align:center;
+	   font-size: 18px;
+	   
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 500px) {
+#map1, #map2,{width:100%; float:left;}
+  }

@@ -1,0 +1,85 @@
+<!DOCTYPE html
+
+<head>
+<title>Aboutpage - MIAZZ Store</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="stylemarket.css">
+</head>
+<body>
+<div id="outfit-header">
+	<div id="nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="products.html">Products</a> 
+<a href="categories.html">Category</a> 
+<a href="new.html">New</a>
+<a href="maps.html">Maps</a>
+   </div>
+</div>
+<div id="text-banner">
+<h1>About Us</h1>
+    <br>
+    <p>Welcome to MIAZZ Store, your number one source for trendy and stylish outfits.We are dedicated to providing you with high-quality fashion, with a focus on sustainability, comfort and affordability.</p>
+<h1>Our Mission</h1>
+    <br>
+    <p>At MIAZZ Store, we aim to make fashion accessible to everyone. Our team carefully selects the best styles to help you express yourself with confidence and elegance.</p>
+<div id="outfit">
+    <div id="outfit-card">
+      <div id="box2"><!------- kotak2 mula ----->
+		<div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/banner.jpg" id="picture">
+              <div class="text3">Golden Season</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/banner2.jpg" id="picture">
+              <div class="text3">Men Outer Wear</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/banner3.jpg" id="picture">
+              <div class="text3">Kids Collection</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+   </div>
+   <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+	</div><!------- kotak2 akhir ----->
+</div>  
+<div id="outfit-footer">
+    <p>&copy; For Educational Purpose Only (THIS IS NOT UNOFFICIAL WEBSITE).</p>
+    <p>&copy; Creator: Nur Fakhira Damia.</p>
+</div>    
+</body>
+</html>
